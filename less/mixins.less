@@ -1,4 +1,4 @@
-.btnStyle(){
+.btnStyle() {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,4 +9,40 @@
     margin-right: 40px;
     border-radius: 0.5em;
     background-color: @green;
+}
+
+.bio-card-styling() {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 1.0em;
+    height: 450px;
+    width: 40%;
+    padding: 20px;
+    margin: 20px;
+    background-color: @green; 
+    color: white;
+}
+
+.center-content() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-styling() {
+    width: 80%;
+    height: 40px;
+    background-color: @gray;
+    font-size: 2.0rem;
+    .center-content();
+
+    a {
+        text-decoration: none;
+        color: @orange;
+        padding: 20px;
+    }
 }
