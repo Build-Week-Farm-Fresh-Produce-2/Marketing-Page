@@ -1,3 +1,10 @@
+.page-break {
+  height: 10px;
+  width: 100%;
+}
+.logo-size {
+  width: 600px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
 License: none (public domain)
@@ -195,33 +202,41 @@ img {
 }
 .footer {
   width: 100%;
-  height: 40px;
-  border: 2px solid #5A5A5A;
-  background: #329401;
+  height: 80px;
+  background: #4A4A4A;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer p {
+.footer h1 {
   text-align: center;
-  color: #5A5A5A;
-  font-size: 2rem;
+  color: #FFFFFF;
+}
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 10px;
+  background-color: #F9931D;
+}
+.pageBreak {
+  height: 10px;
+  width: 100%;
+  background-color: #F9931D;
 }
 .navContainer {
   width: 90%;
 }
 .navContainer .navBar {
-  width: 80%;
+  width: 90%;
   height: 40px;
-  background-color: #5A5A5A;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 .navContainer .navBar a {
   text-decoration: none;
-  color: #F9931D;
+  color: #AC54AE;
   padding: 20px;
 }
 .missionStatement {
@@ -236,12 +251,19 @@ img {
   display: flex;
   justify-content: center;
   padding: 10px;
-  border: 2px solid gray;
+  border: 2px solid #329401;
   border-radius: 1em;
   height: 450px;
   width: 40%;
   padding: 20px;
   margin: 20px;
-  background-color: #329401;
-  color: white;
+  color: #4A4A4A;
+}
+@media (max-width: 500px) {
+  .bioCard {
+    width: 400px;
+  }
+}
+.logo {
+  width: 600px;
 }

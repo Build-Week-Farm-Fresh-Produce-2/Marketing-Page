@@ -15,14 +15,17 @@
     display: flex;
     justify-content: center;
     padding: 10px;
-    border: 2px solid gray;
+    border: 2px solid @green;
     border-radius: 1.0em;
     height: 450px;
     width: 40%;
     padding: 20px;
-    margin: 20px;
-    background-color: @green; 
-    color: white;
+    margin: 20px; 
+    color:@gray;
+
+    @media @mobile {
+        width: 400px;
+    }
 }
 
 .center-content() {
@@ -32,15 +35,24 @@
 }
 
 .nav-bar-styling() {
-    width: 80%;
+    width: 90%;
     height: 40px;
-    background-color: @gray;
-    font-size: 2.0rem;
-    .center-content();
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
 
     a {
         text-decoration: none;
-        color: @orange;
+        color: @magenta;
         padding: 20px;
     }
+}
+
+.page-break {
+    height: 10px;
+    width: 100%;
+}
+
+.logo-size {
+    width: 600px;
 }
