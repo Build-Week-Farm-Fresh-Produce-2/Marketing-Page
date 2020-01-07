@@ -170,10 +170,6 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 .container {
   max-width: 1000px;
   width: 100%;
@@ -187,18 +183,32 @@ img {
   }
 }
 .navContainer {
-  max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.navContainer .nav-bar a {
+.navContainer .navBar {
+  width: 90%;
+  height: 40px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.navContainer .navBar a {
+  text-decoration: none;
+  color: #AC54AE;
+  padding: 20px;
+}
+.navContainer .navBar a:hover {
+  color: #F9931D;
+  text-decoration: #AC54AE underline;
+}
+.navContainer .navBar .navBar a {
   text-decoration: none;
   color: black;
-  font-size: 1.5em;
-  padding: 1em;
+  font-size: 1em;
+  padding: 20px;
 }
 .footer {
   width: 100%;
@@ -214,33 +224,52 @@ img {
 }
 .headerContainer {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 10px;
-  background-color: #F9931D;
-}
-.pageBreak {
-  height: 10px;
-  width: 100%;
-  background-color: #F9931D;
-}
-.navContainer {
-  width: 90%;
-}
-.navContainer .navBar {
-  width: 90%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  float: right;
+  font-size: 2em;
+  width: 100px;
+  padding: 10px;
   height: 40px;
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: flex-end;
+  margin-right: 40px;
+  border-radius: 4px;
+  background-color: #F9931D;
 }
-.navContainer .navBar a {
+.headerContainer a {
   text-decoration: none;
-  color: #AC54AE;
-  padding: 20px;
+  color: #FFFFFF;
+}
+.headerContainer a:hover {
+  color: #4A4A4A;
+}
+.pageBreakOrange {
+  height: 10px;
+  width: 100%;
+  background-color: #F9931D;
+}
+.pageBreakGray {
+  height: 10px;
+  width: 100%;
+  background-color: #4A4A4A;
+}
+.headerPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerPhoto img {
+  width: 100%;
+  margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .headerPhoto img {
+    width: 400px;
+  }
 }
 .missionStatement {
   color: #AC54AE;
+  padding: 40px 0px 40px 0px;
 }
 .aboutContainer {
   display: flex;
@@ -248,13 +277,12 @@ img {
   justify-content: center;
 }
 .bioCard {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 10px;
-  border: 2px solid #329401;
+  border: 2px solid #4A4A4A;
   border-radius: 1em;
-  height: 450px;
-  width: 40%;
+  height: auto;
+  width: 45%;
   padding: 20px;
   margin: 20px;
   color: #4A4A4A;
@@ -264,6 +292,19 @@ img {
     width: 400px;
   }
 }
+.bioCard img {
+  width: 100%;
+  border: 2px solid #F9931D;
+  border-radius: 10px;
+}
 .logo {
   width: 600px;
+}
+.logo img {
+  width: 500px;
+}
+@media (max-width: 500px) {
+  .logo img {
+    width: 400px;
+  }
 }
