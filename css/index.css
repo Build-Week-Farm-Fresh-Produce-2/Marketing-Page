@@ -154,20 +154,20 @@ h5 {
   font-family: 'Merriweather', serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 p {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding-bottom: 10px;
 }
 .container {
@@ -177,6 +177,19 @@ p {
 }
 @media (max-width: 500px) {
   .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.aboutContainer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FCF3EA;
+}
+@media (max-width: 500px) {
+  .aboutContainer {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
@@ -211,8 +224,9 @@ p {
   padding: 20px;
 }
 .footer {
+  flex-direction: column;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background: #4A4A4A;
   display: flex;
   justify-content: center;
@@ -238,10 +252,10 @@ p {
 }
 .headerContainer a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #4A4A4A;
 }
 .headerContainer a:hover {
-  color: #4A4A4A;
+  color: #329401;
 }
 .pageBreakOrange {
   height: 10px;
@@ -254,9 +268,11 @@ p {
   background-color: #4A4A4A;
 }
 .headerPhoto {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 .headerPhoto img {
   width: 100%;
@@ -270,11 +286,24 @@ p {
 .missionStatement {
   color: #AC54AE;
   padding: 40px 0px 40px 0px;
+  text-align: center;
+}
+.teamInfo {
+  color: #4A4A4A;
+  text-align: center;
 }
 .aboutContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.aboutContainer a {
+  text-decoration: none;
+  color: #AC54AE;
+  font-size: 1.5rem;
+}
+.aboutContainer a:hover {
+  color: #F9931D;
 }
 .bioCard {
   text-align: center;
@@ -282,9 +311,9 @@ p {
   border: 2px solid #4A4A4A;
   border-radius: 1em;
   height: auto;
-  width: 45%;
+  width: 40%;
   padding: 20px;
-  margin: 20px;
+  margin: 30px;
   color: #4A4A4A;
 }
 @media (max-width: 500px) {
@@ -294,8 +323,9 @@ p {
 }
 .bioCard img {
   width: 100%;
-  border: 2px solid #F9931D;
+  border: 2px solid #329401;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 .logo {
   width: 600px;
