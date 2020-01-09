@@ -1,0 +1,340 @@
+.page-break {
+  height: 10px;
+  width: 100%;
+}
+.logo-size {
+  width: 600px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(top-bg-img.jpg);
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Merriweather', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Merriweather', serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+p {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.aboutContainer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FCF3EA;
+}
+@media (max-width: 500px) {
+  .aboutContainer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.navContainer {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.navContainer .navBar {
+  width: 90%;
+  height: 40px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.navContainer .navBar a {
+  text-decoration: none;
+  color: #AC54AE;
+  padding: 20px;
+}
+.navContainer .navBar a:hover {
+  color: #F9931D;
+  text-decoration: #AC54AE underline;
+}
+.navContainer .navBar .navBar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  padding: 20px;
+}
+.footer {
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background: #4A4A4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1 {
+  text-align: center;
+  color: #FFFFFF;
+}
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  float: right;
+  font-size: 2em;
+  width: 100px;
+  padding: 10px;
+  height: 40px;
+  margin-right: 40px;
+  border-radius: 4px;
+  background-color: #F9931D;
+}
+.headerContainer a {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+.headerContainer a:hover {
+  color: #329401;
+}
+.pageBreakOrange {
+  height: 10px;
+  width: 100%;
+  background-color: #F9931D;
+}
+.pageBreakGray {
+  height: 10px;
+  width: 100%;
+  background-color: #4A4A4A;
+}
+.headerPhoto {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.headerPhoto img {
+  width: 100%;
+  margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .headerPhoto img {
+    width: 400px;
+  }
+}
+.missionStatement {
+  color: #AC54AE;
+  padding: 40px 0px 40px 0px;
+  text-align: center;
+}
+.teamInfo {
+  color: #4A4A4A;
+  text-align: center;
+}
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aboutContainer a {
+  text-decoration: none;
+  color: #AC54AE;
+  font-size: 1.5rem;
+}
+.aboutContainer a:hover {
+  color: #F9931D;
+}
+.bioCard {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #4A4A4A;
+  border-radius: 1em;
+  height: auto;
+  width: 40%;
+  padding: 20px;
+  margin: 30px;
+  color: #4A4A4A;
+}
+@media (max-width: 500px) {
+  .bioCard {
+    width: 400px;
+  }
+}
+.bioCard img {
+  width: 100%;
+  border: 2px solid #329401;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.logo {
+  width: 600px;
+}
+.logo img {
+  width: 500px;
+}
+@media (max-width: 500px) {
+  .logo img {
+    width: 400px;
+  }
+}
