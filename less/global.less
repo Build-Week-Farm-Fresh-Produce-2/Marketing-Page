@@ -1,63 +1,179 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  border-top: 7px solid @orange;
+  position: relative;
+}
+
+.register_login {
+  display: flex;
+  justify-content: flex-end;
+  .centered;
+
+  a.login {
+    padding: 15px 50px;
+    background-color: @orange;
+    color: #fff;
+    font-family: @h-font;
+    text-decoration: none;
+    right: 0;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: -10px;
+    line-height: 30px;
+
+    &:hover {
+      color: @main-gray;
     }
-body  {
-    background: url(top-bg-img.jpg);
-}
-html {
-    font-size: 62.5%;
+  }
 }
 
-html, body {
-    font-family: 'Merriweather', serif;
+header {
+  .centered;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  nav {
+    margin-top: 110px;
+    a {
+      font-family: @h-font;
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: capitalize;
+      text-decoration: none;
+      margin-left: 30px;
+      color: @purple;
+
+      &:hover {
+        color: @orange;
+        border-bottom: 2px solid @purple;
+      }
+    }
+  }
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Merriweather', serif;
-}
+main {
+  .cycle-slideshow {
+    border-top: 7px solid @light-gray;
+    border-bottom: 7px solid @light-gray;
+    margin-bottom: 40px;
 
-h1 {
-    font-size: 3rem;
-}
+    img {
+      min-width: 100%;
+    }
+  }
 
-h2 {
-    font-size: 2.5rem;
-    padding-bottom: 10px;
-}
+  .call_two_action {
+    padding: 40px;
 
-h4 {
-    font-size: 2.0rem;
-    padding-bottom: 10px;
-}
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      color: @purple;
+    }
 
-p {
-    font-family: 'Ubuntu', sans-serif;
-    line-height: 1.5;
-    font-size: 1.5rem;
-    padding-bottom: 10px;
-}
+    .two_col {
+      .centered;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-.container {
-    max-width: 1000px;
+      img {
+        margin-right: 40px;
+      }
+
+      p {
+        font-family: @p-font;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+      }
+    }
+    a {
+      margin: 40px auto 40px auto;
+      display: block;
+      width: 40%;
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-family: @h-font;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 26px;
+      box-shadow: 5px 5px 10px @main-gray;
+
+      &:hover {
+        background-color: @main-gray;
+      }
+    }
+
+    .farmer_call {
+      background-color: @orange;
+    }
+    .family_call {
+      background-color: @green;
+    }
+  }
+
+  .why {
+    padding: 80px 0 80px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .centered;
+
+    h2 {
+      margin: 40px 0 40px;
+      font-family: @h-font;
+      font-size: 38px;
+      line-height: 58px;
+      font-weight: 300;
+      text-align: center;
+      color: @main-gray;
+    }
+  }
+
+  .two_col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    margin: 0 auto;
+    padding: 0 50px;
 
-        @media @mobile {
-            max-width: 500px;
-            width: 100%;
-            margin: 0 auto;  
+    ul {
+      width: 45%;
+
+      h3 {
+        font-size: 38px;
+        color: @purple;
+        margin-bottom: 20px;
+      }
+
+      li {
+        font-family: @p-font;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+          margin-right: 20px;
         }
+      }
+    }
+  }
 }
 
-.aboutContainer {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: @bg-color;
-
-        @media @mobile {
-            max-width: 500px;
-            width: 100%;
-            margin: 0 auto;  
-        }
+footer {
+  background-color: @main-gray;
+  padding: 60px;
+  border-top: 7px solid @orange;
+  display: flex;
+  justify-content: center;
 }
