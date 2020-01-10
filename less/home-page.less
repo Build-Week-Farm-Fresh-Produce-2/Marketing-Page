@@ -33,7 +33,7 @@
             margin-top: 40px;
 
             @media @mobile {
-                width: 400px;
+                width: 100%;
             }
         }
 }
@@ -61,6 +61,10 @@
 
             &:hover {
                 color: @orange;
+
+                @media @mobile {
+                    flex-direction: column;
+                }
             }
         }
 }
@@ -81,10 +85,6 @@
     .logo-size();
 
     img {
-        width: 500px;
-
-        @media @mobile {
-            width: 400px;
-        }
+        width: 95%;
     }
 }

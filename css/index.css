@@ -3,7 +3,7 @@
   width: 100%;
 }
 .logo-size {
-  width: 600px;
+  width: 40%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
@@ -186,7 +186,6 @@ p {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  background-color: #FCF3EA;
 }
 @media (max-width: 500px) {
   .aboutContainer {
@@ -328,13 +327,8 @@ p {
   margin-bottom: 15px;
 }
 .logo {
-  width: 600px;
+  width: 40%;
 }
 .logo img {
-  width: 500px;
-}
-@media (max-width: 500px) {
-  .logo img {
-    width: 400px;
-  }
+  width: 100%;
 }
