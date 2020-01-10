@@ -272,16 +272,17 @@ p {
   width: 100%;
   background-color: #4A4A4A;
 }
+.logo {
+  width: 75%;
+  padding: 15px 0px 0px 15px;
+}
 .headerPhoto {
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-}
-.headerPhoto img {
   width: 100%;
-  margin-top: 40px;
 }
 .missionStatement {
   color: #AC54AE;
