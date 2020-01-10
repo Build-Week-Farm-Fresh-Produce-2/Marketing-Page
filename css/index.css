@@ -170,7 +170,6 @@ p {
   font-size: 2rem;
   padding-bottom: 20px;
   text-align: center;
-  width: 90%;
 }
 .container {
   max-width: 1000px;
@@ -316,13 +315,14 @@ p {
 .bioCard {
   text-align: center;
   padding: 10px;
-  border: 2px solid #4A4A4A;
+  border: 3px solid #888888;
   border-radius: 1em;
   height: auto;
   width: 40%;
   padding: 20px;
   margin: 30px;
-  color: #4A4A4A;
+  color: #FFFFFF;
+  background-color: #4A4A4A;
 }
 @media (max-width: 500px) {
   .bioCard {
@@ -331,7 +331,7 @@ p {
 }
 .bioCard img {
   width: 100%;
-  border: 2px solid #329401;
+  border: 3px solid #F9931D;
   border-radius: 10px;
   margin-bottom: 15px;
 }
