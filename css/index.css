@@ -152,22 +152,22 @@ h3,
 h4,
 h5 {
   font-family: 'Merriweather', serif;
+  line-height: 1.5;
 }
 h1 {
-  font-size: 3rem;
+  font-family: 'Merriweather', serif;
 }
 h2 {
-  font-size: 2.5rem;
+  font-family: 'Merriweather', serif;
   padding-bottom: 20px;
 }
 h4 {
-  font-size: 2rem;
+  font-family: 'Merriweather', serif;
   padding-bottom: 20px;
 }
 p {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.5;
-  font-size: 2rem;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -242,6 +242,7 @@ p {
 .footer h1 {
   text-align: center;
   color: #FFFFFF;
+  font-size: 4rem;
 }
 .headerContainer {
   display: flex;
@@ -287,12 +288,15 @@ p {
 }
 .missionStatement {
   color: #AC54AE;
-  padding: 40px 0px 40px 0px;
+  padding: 80px 0px 80px 0px;
   text-align: center;
+  font-size: 6rem;
 }
 .teamInfo {
   color: #4A4A4A;
   text-align: center;
+  padding-bottom: 60px;
+  font-size: 5rem;
 }
 .aboutContainer {
   display: flex;
@@ -323,9 +327,13 @@ p {
   margin: 30px;
   color: #FFFFFF;
   background-color: #4A4A4A;
+  font-size: 3rem;
+}
+.bioCard p {
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
-  .bioCard {
+  .bioCard p {
     width: 400px;
   }
 }
