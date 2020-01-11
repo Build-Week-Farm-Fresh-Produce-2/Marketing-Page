@@ -334,6 +334,11 @@ p {
 .bioCard p {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .bioCard {
+    width: 90%;
+  }
+}
 .bioCard img {
   width: 100%;
   border: 3px solid #F9931D;
