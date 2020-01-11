@@ -164,6 +164,7 @@ h2 {
 h4 {
   font-family: 'Merriweather', serif;
   padding-bottom: 20px;
+  font-size: 1rem;
 }
 p {
   font-family: 'Ubuntu', sans-serif;
@@ -297,6 +298,7 @@ p {
   text-align: center;
   padding-bottom: 60px;
   font-size: 3.5rem;
+  width: 90%;
 }
 .aboutContainer {
   display: flex;
@@ -330,12 +332,7 @@ p {
   font-size: 3rem;
 }
 .bioCard p {
-  font-size: 1.5rem;
-}
-@media (max-width: 500px) {
-  .bioCard p {
-    width: 400px;
-  }
+  font-size: 2rem;
 }
 .bioCard img {
   width: 100%;
