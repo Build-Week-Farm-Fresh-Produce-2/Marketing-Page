@@ -334,7 +334,7 @@ p {
 }
 @media (max-width: 500px) {
   .bioCard p {
-    font-size: 0.5rem;
+    width: 400px;
   }
 }
 .bioCard img {
